@@ -1,5 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
+<style>
+    /* Split the screen in half */
+.split {
+  height: 100%;
+  width: 50%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+/* Control the left side */
+.left {
+  left: 0;
+  background-color: #111;
+}
+
+/* Control the right side */
+.right {
+  right: 0;
+  background-color: red;
+}
+
+/* If you want the content centered horizontally and vertically */
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+/* Style the image inside the centered container, if needed */
+.centered img {
+  width: 150px;
+  border-radius: 50%;
+}
+</style>
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,7 +48,6 @@
     <!--https://linuxhint.com/use-div-tag-html-divide-page/#:~:text=In%20HTML%2C%20we%20can%20divide,vertical%20sections%20of%20the%20webpage.-->
 </head>
 <body>
-    <h1> Welcome! Choose a dungeon!</h1>
         
     <img src="img/madmage.jpg" width=300 height=250>
     <a href ="MadMage/index.html">Dungeon of the Mad Mage</a>
